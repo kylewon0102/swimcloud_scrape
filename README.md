@@ -81,14 +81,11 @@ swimcloud.py/
 When you run the script, the swimmer’s data will be saved in a .txt file. Here's an example of how the file might look:
 
 ```
-John Doe
-Miami, FL
-University of Miami
-https://twitter.com/johndoe
-https://www.instagram.com/johndoe
-
-Event 1: 100m Freestyle: 00:53.20
-Event 2: 200m Backstroke: 02:03.10
+Kyle Won
+Lexington, MA Columbia University https://instagram.com/kylewon0102
+50 Y Free: 20.72
+50 S Free: 26.19
+...
 ```
 
 ## License
