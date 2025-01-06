@@ -19,26 +19,28 @@ Before running the script, ensure that you have the necessary dependencies insta
 
 You can install the required Python packages by running:
 
-```bash
+```
 pip3 install beautifulsoup4 requests
+```
+
 
 How to Use
 Clone this repository to your local machine:
 
-bash
-Copy code
+```
 git clone https://github.com/yourusername/swimcloud.py.git
-Navigate to the project folder:
+```
 
-bash
-Copy code
+Navigate to the project folder:
+```
 cd swimcloud.py
+```
+
 In the script swimcloud.py, the main functionality is encapsulated within the swimmer_class. You can create an instance of this class, update swimmer information, and save the data.
 
 Example usage:
 
-python
-Copy code
+```
 from swimcloud import swimmer_class
 
 # URL of the swimmer's Swimcloud profile
@@ -56,25 +58,29 @@ swimmer.save_info_as_file("swimmer_data.txt")
 # Search for a specific event
 event = swimmer.search_event("100m Freestyle")
 print(event)
+```
+
 The save_info_as_file method will save the swimmer's data into a .txt file with the swimmer's details, SNS links, and event list.
 
-How It Works
+## How It Works
 Swimmer Profile: The swimmer_class takes a URL to a Swimcloud profile and extracts the swimmer's name, hometown, university, and SNS links.
 Event Data: The class also scrapes the swimmer's event data such as event names and times.
 Data Storage: Once the data is retrieved, it can be saved into a .txt file or used further in other projects.
 Search Events: The search_event method allows searching specific events from the swimmer's event list.
-File Structure
-bash
-Copy code
+
+**File Structure** 
+```
 swimcloud.py/
 ├── swimcloud.py         # The main Python script containing all classes and logic
 ├── README.md            # This file
 └── example.txt          # Example data file (optional)
-Example Output
+```
+
+## Example Output
+
 When you run the script, the swimmer’s data will be saved in a .txt file. Here's an example of how the file might look:
 
-vbnet
-Copy code
+```
 John Doe
 Miami, FL
 University of Miami
@@ -83,12 +89,10 @@ https://www.instagram.com/johndoe
 
 Event 1: 100m Freestyle: 00:53.20
 Event 2: 200m Backstroke: 02:03.10
-...
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+```
 
-vbnet
-Copy code
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Explanation:
 
